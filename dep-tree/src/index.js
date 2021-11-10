@@ -4,6 +4,6 @@ const coreModuleName = "Carp::Heavy";
 const moduleName = "Path::Tiny";
 
 const moduleDeps = moduleLoader(moduleName);
-const moduleDeps2 = moduleLoader(moduleName);
+const moduleDeps2 = moduleLoader(coreModuleName);
 
 console.log(moduleDeps2);

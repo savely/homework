@@ -1,10 +1,15 @@
-const coreModules =  require("../data/core-modules.json");
+const coreModulesArray =  require("../data/core-modules.json");
 const nameResolverModule = require("./module-name-resolver");
 const path = require("path");
 const fs = require("fs");
 const process = require("process");
 
 const metaFileName = "META.json";
+
+const coreModules = coreModulesArray.reduce((acc, moduleName) => {
+    acc[moduleName] = true;
+    return acc;
+}, {});
 
 const cache = {};
 
