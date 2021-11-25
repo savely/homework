@@ -9,6 +9,6 @@ const getResolver = () => {
 
         return distr;
     };
-}
+};
 
 module.exports = getResolver;
